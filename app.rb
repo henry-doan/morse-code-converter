@@ -63,4 +63,6 @@ def morse_code_converter
   p @alphabet.key(user_input)
 end
 
-menu
+while true
+  menu
+end
