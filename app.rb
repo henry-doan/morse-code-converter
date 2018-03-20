@@ -24,13 +24,24 @@
   "w" => ".--",
   "x" => "-..-",
   "y" => "-.--",
-  "z" => "--.."
+  "z" => "--..",
+  "1" => ".----",
+  "2" => "..---",
+  "3" => "...--",
+  "4" => "....-",
+  "5" => ".....",
+  "6" => "-....",
+  "7" => "--...",
+  "8" => "---..",
+  "9" => "----.",
+  "0" => "-----",
+  " " => " "
  }
 
 def menu
   p "Hello! Welcome to morse code converter!"
   p "What do you want to do?"
-  p "1: Convert words to morse code"
+  p "1: Convert words or numbers to morse code"
   p "2: Convert morse code to letters"
   p "3: Exit"
   user_input = gets.strip.to_s
@@ -50,7 +61,7 @@ def menu
 end
 
 def word_converter
-  p "Tell me a word to convert to morse code"
+  p "Tell me a word or number to convert to morse code"
   user_input_arr = gets.strip.chars
   user_input_arr.each { |letter| 
     p @alphabet[letter]
