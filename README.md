@@ -9,3 +9,4 @@ morse code ruby app
 ### TODO:
 - [ ] Refactor to Javascript
 - [ ] Have sentences converted
+- [ ] Have numbers converted
